@@ -30,39 +30,32 @@
         max-height: 100%;
         width: 100vw;
         max-width: 100%;
-        align-items: center;
         justify-content: space-evenly;
         overflow: hidden;
     }
 
-    .home-txt{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 30vh;
-        text-transform: uppercase;
-        max-width: 100%;
-        padding-top: 70px;
-    }
-
     .home-txt h2{
-        transform: rotate(270deg);
-        font-size: 40vw;
-        align-self: self-end;
-        position: relative;
+        padding-top: 70px;
         color: var(--cor0);
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: var(--cor1);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 8vw;
+        letter-spacing: 8px;
     }
 
-    .hometxt-cont {
-        font-size: 6vw;
+    .hometxt-cont{
+        text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        position: relative;
-        left: -20%;
-        z-index: 2;
-        padding-right: 3rem;
+        row-gap: 0.5rem;
+    }
+
+    .hometxt-cont h1{
+        font-size: 10vw;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
 
     .hometxt-cont p span {
@@ -73,12 +66,15 @@
     .hometxt-cont p{
         color: var(--cor2);
         text-decoration: none;
+        font-size: 5vw;
     }
 
     .home-btns{
         display: flex;
-        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1rem;
         row-gap: 0.5rem;
+        font-size: 5vw;
     }
 
     .home-btns a:nth-child(1){
