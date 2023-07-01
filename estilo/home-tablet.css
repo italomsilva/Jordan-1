@@ -20,87 +20,90 @@
     scroll-behavior: smooth;
 }
 
-@media(max-width:570px){
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+
+@media(min-width: 571px) and (max-width:1000px){
     #home{
         background-color: var(--cor0);
         color: var(--cor1);
         display: flex;
-        flex-direction: column;
-        height: 100vh;
-        max-height: 100%;
+        align-items: center;
+        justify-content: center;
         width: 100vw;
         max-width: 100%;
-        justify-content: space-evenly;
+        height: 100vh;
+        max-height: 100%;
         overflow: hidden;
     }
 
-    .home-txt h2{
-        padding-top: 70px;
-        color: var(--cor0);
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: var(--cor1);
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 8vw;
-        letter-spacing: 8px;
+    .home-txt{
+        position: relative;
+        top: -10vh;
     }
 
-    .hometxt-cont{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 0.5rem;
+    .home-txt h2{
+        font-size: 20vw;
+        text-transform: uppercase;
+        color: var(--cor0);
+        -webkit-text-stroke-color: var(--cor1);
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .hometxt-cont {
+        position: relative;
+        z-index: 2;
+        text-transform: uppercase;
     }
 
     .hometxt-cont h1{
-        font-size: 10vw;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 600%;
     }
 
-    .hometxt-cont p span {
+    .hometxt-cont p {
+        font-size: 400%;
+        color: var(--cor2);
+    }
+
+    .hometxt-cont p span{
         color: var(--cor3);
         text-decoration: line-through;
-    }
-
-    .hometxt-cont p{
-        color: var(--cor2);
-        text-decoration: none;
-        font-size: 5vw;
+        font-size: 70%;
     }
 
     .home-btns{
         display: flex;
-        justify-content: center;
-        gap: 1rem;
-        row-gap: 0.5rem;
-        font-size: 5vw;
+        column-gap: 2rem;
+        font-size: 180%;
     }
 
     .home-btns a:nth-child(1){
         color: var(--cor0);
         background-color: var(--cor2);
-        border: 3px solid var(--cor2);
         width: max-content;
-        padding: 0 1rem;
+        padding: 0 2rem;
         border-radius: 3rem;
-        letter-spacing: 5px;
-        transition: 0.5s;
+        border: 2px solid var(--cor2);
+        transition: all 0.8s;
     }
 
     .home-btns a:nth-child(1):hover{
-        background-color: var(--cor0);
+        background-color: transparent;
         color: var(--cor2);
     }
 
     .home-btns a:nth-child(2){
         color: var(--cor1);
         background-color: var(--cor0);
-        border: 3px solid var(--cor1);
         width: max-content;
         padding: 0 1rem;
         border-radius: 3rem;
-        transition: 0.5s;
+        border: 2px solid var(--cor1);
+        transition: all 0.8s;
     }
 
     .home-btns a:nth-child(2):hover{
@@ -109,19 +112,20 @@
     }
 
     .tenis-home{
+        width: 35vw;
         position: relative;
-        width: 55vw;
-        align-self: end;
-        right: 10vw;
+        z-index: 1;
+
+        top: 10vh;
     }
 
     .homecp{
         position: absolute;
-        background-color: var(--cor1);
-        width: 100vw;
-        height: 100vh;
-        display: block;
         content: "";
-        clip-path: polygon(100% 60%, 0% 100%, 100% 100%);
+        background-color: var(--cor1);
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        clip-path: polygon(100% 20%, 50% 100%, 100% 100%);
     }
 }

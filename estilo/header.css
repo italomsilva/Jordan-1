@@ -27,7 +27,7 @@
 /* DESKTOP */
 /* DESKTOP */
 
-@media(min-width: 571px){
+@media(min-width: 1000px){
     header{
         background-color: var(--cor0);
         display: flex;
@@ -75,6 +75,56 @@
 
     .menu-lista li a:hover::after{
         width: 100%;
+    }
+
+}
+
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+
+@media(min-width: 571px) and (max-width:1000px){
+    header{
+        background-color: var(--cor0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        position: fixed;
+        width: 100vw;
+        max-width: 100%;
+        z-index: 1000;
+    }
+
+    .logo{
+        width: 90px;
+    }
+
+    .logo-img{
+        max-width: 100%;
+    }
+
+    .menuburguer{
+        display: none;
+    }
+
+    .menu-lista{
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .menu-lista li a {
+        color: var(--cor1);
+        font-size: 1.8rem;
+        transition: 0.5s;
+    }
+
+
+    .menu-lista li a:hover{
+        color: var(--cor2);
     }
 
 }
@@ -142,7 +192,7 @@
     }
 
     .menu-lista li a:hover{
-        color: #a52a2a;
+        color: var(--cor2);
     }
 
     .menuburguer{
