@@ -53,7 +53,9 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
+        box-shadow: 3px 3px 6px #000000b1;
     }
+
     .det-banner:nth-last-child(1){
         display: flex;
         align-items: center;
@@ -91,13 +93,17 @@ body{
         padding: 0.5rem 1rem;
     }
 
+    .det-contcards p{
+        font-style: normal;
+    }
+
     .det-contcards div:nth-child(1){
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: var(--cor1);
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-align: center;
         font-weight: 500;
         width: 100vw;
@@ -109,35 +115,17 @@ body{
         background-repeat: no-repeat;
         background-blend-mode: darken;
         background-attachment: fixed;
-        margin-bottom: 10px;
+        margin-bottom: 1px;
+        box-shadow: 1px 1px 6px #000000b1;
     }
-    .det-contcards div:nth-child(3){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--cor1);
-        letter-spacing: 2px;
-        text-align: center;
-        font-weight: 500;
-        width: 100vw;
-        max-width: 100%;
-        height: 70vh;
-        background: #000000a4 url(../imagens/banners/aj-cartaz3.jpg); 
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-blend-mode: darken;
-        margin-bottom: 30px;
-        background-attachment: fixed;
-    }
+
     .det-contcards div:nth-child(2){
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: var(--cor1);
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-align: center;
         font-weight: 500;
         width: 100vw;
@@ -149,6 +137,33 @@ body{
         background-repeat: no-repeat;
         background-blend-mode: darken;
         background-attachment: fixed;
-        margin-bottom: 10px;
+        margin-bottom: 1px;
+        box-shadow: 1px 1px 6px #000000b1;
+    }
+
+    .det-contcards div:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--cor1);
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 500;
+        width: 100vw;
+        max-width: 100%;
+        height: 70vh;
+        background: #000000a4 url(../imagens/banners/aj-cartaz3.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        margin-bottom: 1px;
+        background-attachment: fixed;
+        box-shadow: 3px 3px 6px #000000b1;
+    }
+
+    .detcont-card h4{
+        font-size: 3rem;
     }
 }
