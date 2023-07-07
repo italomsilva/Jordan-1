@@ -20,10 +20,11 @@
     scroll-behavior: smooth;
 }
 
-@media(min-width:571px) and (max-width:1000px){
+@media(min-width: 571px) and (max-width:1000px){
 
 body{
     overflow-x: hidden;
+    background-color: var(--cor1);
 
 }
 
@@ -32,7 +33,9 @@ body{
         flex-direction: column;
         width: 100vw;
         max-width: 100%;
+        padding-top: 20vh;
         background-color: var(--cor1);
+        overflow-x: hidden;
     }
 
     .det-banner{
@@ -46,26 +49,26 @@ body{
         font-weight: 500;
         width: 100vw;
         max-width: 100%;
-        min-height: 30vh;
+        height: 30vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
+        box-shadow: 3px 3px 6px #000000b1;
     }
 
     .det-banner:nth-child(1){
-        background: #000000a4 url(../imagens/banners/tabela-bask2.jpg); 
-        box-shadow: 3px 3px 6px #000000b1;
-        background-position: center left;
+        background: #000000a4 url(../imagens/banners/tabela-bask.jpg); 
+        background-position: top center;
     }
 
     .det-banner:nth-last-child(1){
         background: #000000a4 url(../imagens/banners/tabela-bask.jpg); 
-        background-position: left center;
+        background-position: top center;
     }
 
     #detalhes h3{
         padding: 0.5rem;
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     #detalhes h3::after{
@@ -74,16 +77,22 @@ body{
         height: 4px;
         width: 20%;
         background-color: var(--cor2);
-        margin-bottom: 20px;
     }
 
     #detalhes p {
-        font-size: 2rem;
+        font-size: 1.3rem;
         padding: 0.5rem 1rem;
     }
 
     .det-contcards p{
         font-style: normal;
+    }
+
+    .det-contcards{
+        display: flex;
+        width: 400vw;
+        column-gap: 1px;
+        margin-bottom: 10px;
     }
 
     .det-contcards div{
@@ -96,9 +105,7 @@ body{
         text-align: center;
         font-weight: 500;
         width: 100vw;
-        max-width: 100%;
-        min-height: 70vh;
-        background-position: center;
+        height: 70vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
@@ -108,20 +115,69 @@ body{
 
     .det-contcards div:nth-child(1){
         background: #000000a4 url(../imagens/banners/aj-cartaz1.jpg); 
-        background-attachment: fixed;
+        background-position: center;
+        transition: 1s;
     }
 
     .det-contcards div:nth-child(2){
         background: #000000a4 url(../imagens/banners/aj-cartaz2.jpg); 
-        background-attachment: fixed;
+        background-position: center;
     }
 
     .det-contcards div:nth-child(3){
         background: #000000a4 url(../imagens/banners/aj-cartaz3.jpg); 
-        background-attachment: fixed;
+        background-position: center;
+        box-shadow: 3px 3px 6px #000000b1;
     }
 
     .detcont-card h4{
-        font-size: 3rem;
+        font-size: 200%;
+    }
+
+    .detcont-card p{
+        font-size: 100%;
+    }
+
+    #detradio1:checked ~ .det-contcards div:nth-child(1){
+        margin-left: 0;
+    }
+    #detradio2:checked ~ .det-contcards div:nth-child(1){
+        margin-left: -100vw;
+    }
+    #detradio3:checked ~ .det-contcards div:nth-child(1){
+        margin-left: -200vw;
+    }
+
+    #detradio1, #detradio2,#detradio3 {
+        display: none;
+    }
+
+    .det-manualbtn{
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+    }
+
+    .det-radiomanual{
+        content: "";
+        display: block;
+        width: 15vw;
+        height: 5vw;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    #labelradio1, #labelradio2, #labelradio3{
+        transition: 1.5s;
+    }
+
+    #detradio1:checked ~ .det-manualbtn label #labelradio1{
+        background-color: #8080808b;
+    }
+    #detradio2:checked ~ .det-manualbtn label #labelradio2{
+        background-color: #8080808b;
+    }
+    #detradio3:checked ~ .det-manualbtn label #labelradio3{
+        background-color: #8080808b;
     }
 }
