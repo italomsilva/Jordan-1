@@ -168,7 +168,7 @@ body{
     }
 
     #labelradio1, #labelradio2, #labelradio3{
-        transition: 2s;
+        transition: 1.5s;
     }
 
     #detradio1:checked ~ .det-manualbtn label #labelradio1{
