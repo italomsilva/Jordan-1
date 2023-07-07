@@ -92,6 +92,7 @@ body{
         display: flex;
         width: 400vw;
         column-gap: 1px;
+        margin-bottom: 10px;
     }
 
     .det-contcards div{
@@ -145,5 +146,38 @@ body{
     }
     #detradio3:checked ~ .det-contcards div:nth-child(1){
         margin-left: -200vw;
+    }
+
+    #detradio1, #detradio2,#detradio3 {
+        display: none;
+    }
+
+    .det-manualbtn{
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+    }
+
+    .det-radiomanual{
+        content: "";
+        display: block;
+        width: 15vw;
+        height: 5vw;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    #labelradio1, #labelradio2, #labelradio3{
+        transition: 2s;
+    }
+
+    #detradio1:checked ~ .det-manualbtn label #labelradio1{
+        background-color: #8080808b;
+    }
+    #detradio2:checked ~ .det-manualbtn label #labelradio2{
+        background-color: #8080808b;
+    }
+    #detradio3:checked ~ .det-manualbtn label #labelradio3{
+        background-color: #8080808b;
     }
 }
