@@ -33,7 +33,7 @@ body{
         flex-direction: column;
         width: 100vw;
         max-width: 100%;
-        padding-top: 20vh;
+        padding-top: 10vh;
         background-color: var(--cor1);
         overflow-x: hidden;
     }
@@ -54,21 +54,15 @@ body{
         background-repeat: no-repeat;
         background-blend-mode: darken;
         box-shadow: 3px 3px 6px #000000b1;
-    }
-
-    .det-banner:nth-child(1){
         background: #000000a4 url(../imagens/banners/tabela-bask.jpg); 
         background-position: top center;
+        margin-top: 1rem;
     }
 
-    .det-banner:nth-last-child(1){
-        background: #000000a4 url(../imagens/banners/tabela-bask.jpg); 
-        background-position: top center;
-    }
 
     #detalhes h3{
         padding: 0.5rem;
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     #detalhes h3::after{
@@ -80,7 +74,7 @@ body{
     }
 
     #detalhes p {
-        font-size: 1.3rem;
+        font-size: 2.5rem;
         padding: 0.5rem 1rem;
     }
 
@@ -131,7 +125,7 @@ body{
     }
 
     .detcont-card h4{
-        font-size: 200%;
+        font-size: 4rem;
     }
 
     .detcont-card p{
@@ -162,7 +156,7 @@ body{
         content: "";
         display: block;
         width: 15vw;
-        height: 5vw;
+        height: 3vw;
         border-radius: 5px;
         border: 1px solid black;
     }
