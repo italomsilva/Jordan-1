@@ -20,52 +20,54 @@
     scroll-behavior: smooth;
 }
 
-@media(max-width:570px){
+@media(min-width: 1000px){
 
-body{
-    overflow-x: hidden;
-    background-color: var(--cor1);
-
-}
+    body{
+        overflow-x: hidden;
+    }
 
     #detalhes{
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         width: 100vw;
         max-width: 100%;
-        padding-top: 20vh;
-        background-color: var(--cor1);
-        overflow-x: hidden;
+        padding-top: 10vh;
     }
 
     #detalhes h3{
-        padding: 0.5rem;
-        font-size: 3rem;
+        font-size: 4rem;
+        width: max-content;
+        margin-bottom: 1rem;
     }
 
-    #detalhes h3::after{
-        content: "";
+    h3::after{
         display: block;
-        height: 4px;
+        content: "";
+        height: 5px;
         width: 20%;
         background-color: var(--cor2);
     }
 
-    #detalhes p {
-        font-size: 1.3rem;
-        padding: 0.5rem 0 0.5rem 0.5rem;
-        text-indent: 1rem;
+    h3 ~ p{
+        font-size: 1.8rem;
+        text-indent: 2rem;
+        margin-bottom: 2rem;
     }
 
-    .det-contcards p{
-        font-style: normal;
+    #detradio1, #detradio2,#detradio3 {
+        display: none;
+    }
+    #labelradio1, #labelradio2, #labelradio3{
+        display: none;
     }
 
     .det-contcards{
         display: flex;
-        width: 400vw;
-        column-gap: 1px;
+        width: 100vw;
+        column-gap: 5%;
         margin-bottom: 10px;
+        justify-content: center;
     }
 
     .det-contcards div{
@@ -77,10 +79,11 @@ body{
         letter-spacing: 1px;
         text-align: center;
         font-weight: 500;
-        width: 100vw;
+        width: 25vw;
         height: 70vh;
         margin-bottom: 1px;
         box-shadow: 1px 1px 6px #000000b1;
+        padding: 1rem;
     }
 
     .det-contcards div:nth-child(1){
@@ -92,13 +95,31 @@ body{
         background-blend-mode: darken;
     }
 
-    .det-contcards div:nth-child(2){
-        background: #000000a4 url(../imagens/banners/aj-cartaz2.jpg); 
+    .det-contcards div:nth-child(1):hover{
+        background: #000000de url(../imagens/banners/aj-cartaz1.jpg); 
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
     }
+
+    .det-contcards div:nth-child(2){
+        background: #000000ce url(../imagens/banners/aj-cartaz2.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        transition: 1s;
+    }
+
+    .det-contcards div:nth-child(2):hover{
+        background: #000000de url(../imagens/banners/aj-cartaz2.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
 
     .det-contcards div:nth-child(3){
         background: #000000a4 url(../imagens/banners/aj-cartaz3.jpg); 
@@ -107,57 +128,24 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
+        transition: 1s;
     }
+
+    .det-contcards div:nth-child(3):hover{
+        background: #000000de url(../imagens/banners/aj-cartaz3.jpg); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
 
     .detcont-card h4{
-        font-size: 200%;
+        font-size: 2.5rem;
     }
 
-    .detcont-card p{
-        font-size: 100%;
-    }
-
-    #detradio1:checked ~ .det-contcards div:nth-child(1){
-        margin-left: 0;
-    }
-    #detradio2:checked ~ .det-contcards div:nth-child(1){
-        margin-left: -100vw;
-    }
-    #detradio3:checked ~ .det-contcards div:nth-child(1){
-        margin-left: -200vw;
-    }
-
-    #detradio1, #detradio2,#detradio3 {
-        display: none;
-    }
-
-    .det-manualbtn{
-        display: flex;
-        justify-content: center;
-        column-gap: 8px;
-    }
-
-    .det-radiomanual{
-        content: "";
-        display: block;
-        width: 15vw;
-        height: 3vw;
-        border-radius: 5px;
-        border: 1px solid black;
-    }
-
-    #labelradio1, #labelradio2, #labelradio3{
-        transition: 1.5s;
-    }
-
-    #detradio1:checked ~ .det-manualbtn label #labelradio1{
-        background-color: #8080808b;
-    }
-    #detradio2:checked ~ .det-manualbtn label #labelradio2{
-        background-color: #8080808b;
-    }
-    #detradio3:checked ~ .det-manualbtn label #labelradio3{
-        background-color: #8080808b;
+    .detcont-card p {
+        font-size: 1.2rem;
     }
 
     .det-banner{
@@ -165,19 +153,20 @@ body{
         align-items: center;
         justify-content: center;
         color: var(--cor1);
-        font-size: 5vw;
+        font-size: 3vw;
         letter-spacing: 2px;
         text-align: center;
         font-weight: 500;
         width: 100vw;
         max-width: 100%;
-        height: 30vh;
+        height: 40vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
         box-shadow: 3px 3px 6px #000000b1;
         background: #000000a4 url(../imagens/banners/tabela-bask.jpg); 
         background-position: top center;
+        margin-top: 1rem;
     }
 
 }
