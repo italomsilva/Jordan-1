@@ -79,8 +79,8 @@
         transition: all 0.5s;
     }
 
-    .comp-lista img.ativo{
-        transform: translateY(-15px);
+    .comp-lista img:hover{
+        transform:  scaleX(-1) translateY(-15px);
         background-color: var(--cor0);
         outline-width: 3px;
         outline-color: var(--cor0);
@@ -94,7 +94,7 @@
 
     .comp-corcp{
         content: "";
-        background-color: red;
+        background-color:#ff0000;
         width: 100vw;
         height: 50vh;
         display: block;
@@ -144,13 +144,10 @@
         font-size: 1.5rem;
     }
 
-    .list-tam li{
-        width: max-content;
-        padding: 2px 20px;
-        font-size: 1.5rem;
-        border-radius: 10px;
-        border: 1px solid black;
+    .list-tam .input{
+        accent-color: var(--cor0);
     }
+
 
     .artcl-size{
         background-color: var(--cor0);
@@ -195,7 +192,8 @@
     .comp-box{
         display: flex;
         width: 100vw;
-        background-color: var(--cor3);
+        max-width: 100%;
+        background-color: #bcbcbc;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem;
@@ -217,4 +215,5 @@
         font-size: 1.3rem;
         padding: 0 0.5rem 0.25rem 0.5rem;
     }
+
 }
