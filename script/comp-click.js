@@ -1,4 +1,7 @@
 const tenisIcons = [...document.querySelectorAll('.com-tenisicon')]
+const sizeradios = [...document.querySelectorAll('.radioblock')]
+const clickradio =[...document.querySelectorAll('.list-tam li')]
+
 
 
 function comprarCp(compcor){
@@ -77,4 +80,83 @@ tenisIcons[11].addEventListener("click", () =>{
     compImg("imagens/tenis/aj-verde.png")
     compCardCor("Darkgreen")
 })
+
+// INPUTS
+// INPUTS
+// INPUTS
+// INPUTS
+// INPUTS 
+function compsize(sizen, sizemed, sexo){
+    var sizecm = document.querySelector('.comp-tam-varcm')
+    var sizenum = document.querySelector('.comp-tam-var')
+    sizecm.innerHTML = sizemed
+    sizenum.innerHTML = `${sexo} ${sizen}`
+}
+
+sizeradios[0].addEventListener("click", () => {
+    compsize(35, 22.5, "Masc")
+})
+sizeradios[1].addEventListener("click", () => {
+    compsize(36, 23.5, "Masc")
+})
+sizeradios[2].addEventListener("click", () => {
+    compsize(37,24, "Masc")
+})
+sizeradios[3].addEventListener("click", () => {
+    compsize(38,25, "Masc")
+})
+sizeradios[4].addEventListener("click", () => {
+    compsize(39, 25.5, "Masc")
+})
+sizeradios[5].addEventListener("click", () => {
+    compsize(40, 26.5, "Masc")
+})
+sizeradios[6].addEventListener("click", () => {
+    compsize(41, 27.5, "Masc")
+})
+sizeradios[7].addEventListener("click", () => {
+    compsize(42, 28, "Masc")
+})
+sizeradios[8].addEventListener("click", () => {
+    compsize(43, 29, "Masc")
+})
+sizeradios[9].addEventListener("click", () => {
+    compsize(44, 30, "Masc")
+})
+sizeradios[10].addEventListener("click" , () => {
+    compsize(33, 21.5, "Fem")
+})
+sizeradios[11].addEventListener("click" , () => {
+    compsize(34, 22.5, "Fem")
+})
+sizeradios[12].addEventListener("click" , () => {
+    compsize(35, 23, "Fem")
+})
+sizeradios[13].addEventListener("click" , () => {
+    compsize(36, 24, "Fem")
+})
+sizeradios[14].addEventListener("click" , () => {
+    compsize(37,24.5, "Fem")
+})
+sizeradios[15].addEventListener("click" , () => {
+    compsize(38,25.5, "Fem")
+})
+sizeradios[16].addEventListener("click" , () => {
+    compsize(39, 26, "Fem")
+})
+sizeradios[17].addEventListener("click" , () => {
+    compsize(40, 27, "Fem")
+})
+sizeradios[18].addEventListener("click" , () => {
+    compsize(41, 27.5, "Fem")
+})
+sizeradios[19].addEventListener("click" , () => {
+    compsize(42, 28.5, "Fem")
+})
+
+
+
+
+
+
 

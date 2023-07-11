@@ -36,6 +36,7 @@
         font-size: 3rem;
         width: max-content;
         align-self: center;
+        margin-bottom: 2rem;
     }
 
     #comprar h3::after{
@@ -136,7 +137,7 @@
     .list-tam{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 3px;
+        row-gap: 0.5rem;
         justify-items: center;
     }
 
@@ -176,8 +177,11 @@
         font-weight: 500;
     }
 
-    .comp-tam-var{
+    .comp-tam-varcm{
         color: var(--cor3);
+    }
+    .comp-tam-var{
+        color: var(--cor0);
     }
 
     .comp-artcl-div{
@@ -215,5 +219,4 @@
         font-size: 1.3rem;
         padding: 0 0.5rem 0.25rem 0.5rem;
     }
-
 }
