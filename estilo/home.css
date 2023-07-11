@@ -145,7 +145,7 @@
 /* TABLET */
 /* TABLET */
 
-@media(min-width: 571px) and (max-width:1000px){
+@media(min-width: 570px) and (max-width:1000px){
     #home{
         background-color: var(--cor0);
         color: var(--cor1);
@@ -162,6 +162,8 @@
     .home-txt{
         position: relative;
         top: -10vh;
+        padding-top: 100px;
+        padding-left: 1rem;
     }
 
     .home-txt h2{
@@ -179,7 +181,7 @@
     }
 
     .hometxt-cont h1{
-        font-size: 600%;
+        font-size: 550%;
     }
 
     .hometxt-cont p {
@@ -255,7 +257,7 @@
 /* MOBILE */
 /* MOBILE */
 
-@media(max-width:570px){
+@media(max-width:569px){
     #home{
         background-color: var(--cor0);
         color: var(--cor1);
@@ -346,7 +348,7 @@
 
     .tenis-home{
         position: relative;
-        width: 55vw;
+        width: 50vw;
         align-self: end;
         right: 10vw;
     }

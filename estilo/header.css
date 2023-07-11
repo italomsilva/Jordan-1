@@ -85,7 +85,7 @@
 /* TABLET */
 /* TABLET */
 
-@media(min-width: 571px) and (max-width:1000px){
+@media(min-width: 700px) and (max-width:1000px){
     header{
         background-color: var(--cor0);
         display: flex;
@@ -135,7 +135,7 @@
 /* MOBILE */
 /* MOBILE */
 
-@media(max-width:570px) {
+@media(max-width:700px) {
     header{
         position: fixed;
         width: 100vw;
