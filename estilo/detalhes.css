@@ -226,19 +226,21 @@
         width: 400vw;
         column-gap: 1px;
         margin-bottom: 10px;
+        min-height: 100%;
     }
 
     .det-contcards div{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         justify-content: center;
         color: var(--cor1);
         letter-spacing: 1px;
         text-align: center;
         font-weight: 500;
         width: 100vw;
-        height: 70vh;
+        min-height: 70vh;
         margin-bottom: 1px;
         box-shadow: 1px 1px 6px #000000b1;
     }
@@ -275,6 +277,8 @@
 
     .detcont-card p{
         font-size: 100%;
+        padding: 0 !important;
+        width: 80vw;
     }
 
     #detradio1:checked ~ .det-contcards div:nth-child(1){
@@ -403,6 +407,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             justify-content: center;
             color: var(--cor1);
             letter-spacing: 1px;
@@ -446,6 +451,8 @@
     
         .detcont-card p{
             font-size: 100%;
+            width: 80vw;
+            padding: 0 !important;
         }
     
         #detradio1:checked ~ .det-contcards div:nth-child(1){

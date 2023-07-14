@@ -11,4 +11,4 @@ function detSlider(){
 
 setInterval(() => {
     detSlider()
-}, 4000);
+}, 6000);

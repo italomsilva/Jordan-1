@@ -220,3 +220,211 @@
         padding: 0 0.5rem 0.25rem 0.5rem;
     }
 }
+
+
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+/* TABLET */
+
+@media(min-width: 571px) and (max-width: 1000px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #comprar{
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #comprar h3{
+        font-size: 3rem;
+        width: max-content;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    #comprar h3::after{
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: var(--cor2);
+    }
+
+    #comprar h4{
+        font-size: 2.2rem;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #comprar h4::after{
+        content: "";
+        display: block;
+        height: 4px;
+        width: 20%;
+        background-color: var(--cor2);
+    }
+
+    .comp-lista{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1.20%;
+        row-gap: 20px;
+    }
+
+    .comp-lista li {
+        list-style: none;
+    }
+
+    .comp-lista img{
+        width: 15vw !important;
+        height: auto;
+        background-color: #80808080;
+        border-radius: 100%;
+        transition: all 0.5s;
+    }
+
+    .comp-lista img:hover{
+        background-color: var(--cor0);
+        outline-width: 3px;
+        outline-color: var(--cor0);
+        outline-style: solid;
+        border: 2px solid var(--cor1);
+    }
+
+    .comp-princ-img{
+        display: flex;
+    }
+
+    .comp-corcp{
+        content: "";
+        background-color:#ff0000;
+        width: 100vw;
+        height: 50vh;
+        display: block;
+        position: relative;
+        clip-path: circle(50% at 00% 50%);
+    }
+
+    .comp-div-tenis{
+        position: relative;
+        height: 10px;
+    }
+
+    .comp-cortenis{
+        position: relative;
+        top: -40vh;
+        left: 0;
+        height: 40vh;
+        z-index: 1;
+        transform: scaleX(-1);
+    }
+
+    .comp-box-size{
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+    }
+
+    .div-list-tam{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 40vw;
+        background-color: #bcbcbc;
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+
+    .list-tam{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0.5rem;
+        justify-items: center;
+    }
+
+    .div-list-tam h5{
+        font-size: 1.5rem;
+    }
+
+    .list-tam .input{
+        accent-color: var(--cor0);
+    }
+
+
+    .artcl-size{
+        background-color: var(--cor0);
+        color: var(--cor1);
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px #000000b1;
+        margin-bottom: 1rem;
+    }
+
+    .artcl-size h4{
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .artcl-size h4::after{
+        display: none !important;
+    }
+
+    .artcl-size p{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .comp-tam-varcm{
+        color: var(--cor3);
+    }
+    .comp-tam-var{
+        color: var(--cor0);
+    }
+
+    .comp-artcl-div{
+        display: flex;
+    }
+
+    .comp-artcl-div img{
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    .comp-box{
+        display: flex;
+        width: 100vw;
+        max-width: 100%;
+        background-color: #bcbcbc;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .comp-box-img img{
+        width: 20vw;
+        background-color: #0000003e;
+        border-radius: 10px;
+    }
+
+    .comp-box-txt h6{
+        font-size: 1.2rem;
+    }
+
+    .comp-box-btn a {
+        background-color: var(--cor0);
+        color: var(--cor1);
+        font-size: 1.3rem;
+        padding: 0 0.5rem 0.25rem 0.5rem;
+    }
+}
